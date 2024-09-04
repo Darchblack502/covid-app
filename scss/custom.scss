@@ -15,6 +15,8 @@ $primary: #4bb322;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+//Se crea una nueva Variable en la escala de Grises para su uso
+
 $grises: (
   "gray-100": $gray-100,
   "gray-200": $gray-200,
@@ -26,6 +28,8 @@ $grises: (
   "gray-800": $gray-800,
   "gray-900": $gray-900
 ) !default;
+
+//Colores disponibles que se pueden usar desde Bootstrap
 
 $all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans, $grises);
 

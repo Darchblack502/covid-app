@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-color: #110101; /* Fondo con color de Bootstrap */
+    background-color: #110101; /* Fondo con color */
     color: #ffffff; /* Texto blanco por defecto */
 }
 
 h1 {
-    color: #bb6262; /* Color púrpura claro para el título */
+    color: #bb6262; /* Color para el título */
     font-weight: bold;
     text-align: center; /* Centrar el título */
     margin-bottom: 30px; /* Espacio debajo del título */
