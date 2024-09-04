@@ -36,13 +36,15 @@ function displayStateData(data, selectedState) {
 
     if (stateInfo) {
         stateData.innerHTML = `
-            <h2>State: ${stateInfo.state}</h2>
-            <p>Confirmed Cases: ${stateInfo.positive}</p>
-            <p>Deaths: ${stateInfo.death}</p>
-            <p>Hospitalized: ${stateInfo.hospitalizedCurrently}</p>
-            <p>Total Tests: ${stateInfo.totalTestResults}</p>
-            <p>Last Updated: ${stateInfo.dateModified}</p>
+            <div class="dataText">
+            <div><h4>State:</h4> <h5>${stateInfo.state}</h5></div>
+            <hr class="divider">
+            <div><p>Confirmed Cases:</p><p> ${stateInfo.positive}</p></div>
+            <div><p>Deaths:</p><p> ${stateInfo.death}</p></div>
+            <div><p>Hospitalized:</p><p> ${stateInfo.hospitalizedCurrently}</p></div>
+            <div><p>Total Tests:</p><p> ${stateInfo.totalTestResults}</p></div>
+            <div><p>Last Updated:</p><p> ${stateInfo.dateModified}</p></div>
+            </div>
         `;
     }
 }
-

@@ -1,8 +1,20 @@
 $primary: #4bb322;
 
+
+.dataText > div {
+  justify-content: space-between;
+  display: flex;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #ccc; /* Puedes ajustar el color según el diseño */
+  margin: 10px 0; /* Espacio vertical antes y después del divisor */
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Añadir nueva paleta de grises
 $grises: (
   "gray-100": $gray-100,
   "gray-200": $gray-200,
@@ -15,16 +27,17 @@ $grises: (
   "gray-900": $gray-900
 ) !default;
 
-$all-colors: map-merge-multiple($grays, $blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans, $grises);
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans, $grises);
+
 
 $utilities: map-merge(
     $utilities,
   (
-      "border-color": map-merge(
-          map-get($utilities, "border-color"),
+      "color": map-merge(
+          map-get($utilities, "color"),
           (
               values: map-merge(
-                  map-get(map-get($utilities, "border-color"), "values"),
+                  map-get(map-get($utilities, "color"), "values"),
                   (
                       $all-colors
                     ),
@@ -33,23 +46,6 @@ $utilities: map-merge(
               ),
             )
           );
-
-$utilities: map-merge(
-  $utilities,
-(
-    "color": map-merge(
-        map-get($utilities, "color"),
-        (
-            values: map-merge(
-                map-get(map-get($utilities, "color"), "values"),
-                (
-                    $all-colors
-                  ),
-                ),
-              ),
-            ),
-          )
-        );
 
 $utilities: map-merge(
     $utilities,
