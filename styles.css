@@ -16,23 +16,22 @@ h1 {
     font-size: 18px;
     padding: 12px;
     border-radius: 5px;
-    background-color: #bd6363; /* Fondo oscuro para el selector */
     color: #ffffff; /* Texto blanco en el selector */
     width: 100%; /* Ancho completo */
 }
 
 .card {
-    background-color: #a15050; /* Fondo oscuro para la tarjeta */
     border: 1px solid #444444; /* Borde más oscuro */
     border-radius: 8px;
     color: #ffffff; /* Texto blanco en la tarjeta */
 }
 
-#stateData p {
-    font-size: 18px;
-    text-align: left; /* Alinear texto a la izquierda para mayor legibilidad */
+#stateData {
+    min-height: 300px;
+    height: auto; /* Permitir que la altura se ajuste al contenido */
+    overflow-y: auto; /* Desplazamiento solo si es necesario */
 }
 
 #chartContainer {
-    min-height: 250px; /* Altura mínima para el cuadro del diagrama */
+    min-height: 300px; /* Altura mínima para el cuadro del diagrama */
 }
