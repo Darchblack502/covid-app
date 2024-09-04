@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,27 +12,29 @@
 <body class="bg-gray-900" data-bs-theme="dark">
     <h2 class="text-white text-center py-4">COVID-19 Tracker</h2>
     <div class="container rounded bg-gray-800 p-4 d-flex flex-column" style="min-height: 500px;">
-    <!-- Combobox de Estados e Iconos -->
-    <div class="row flex-grow-1">
-        <div class="col-md-4 d-flex flex-column">
-            <select id="stateSelector" class="form-select flex-shrink-0 mb-4">
-                <!-- Aquí se llenarán los nombres de los estados -->
-            </select>
-            <div id="stateData" class="card p-4 bg-gray-900 flex-grow-1 justify-content-between">
-                <!-- Aquí se mostrará la información detallada del estado seleccionado -->
+        <!-- Combobox de Estados e Iconos -->
+        <div class="row flex-grow-1">
+            <div class="col-md-4 d-flex flex-column">
+                <select id="stateSelector" class="form-select flex-shrink-0 mb-4">
+                    <!-- Aquí se llenarán los nombres de los estados -->
+                </select>
+                <div id="stateData" class="card p-4 bg-gray-900 flex-grow-1 justify-content-between">
+                    <!-- Aquí se mostrará la información detallada del estado seleccionado -->
                 </div>
             </div>
             <!-- Cuadro para el diagrama -->
             <div class="col-md-8 d-flex flex-column">
-            <div id="chartContainer" class="card bg-gray-900 flex-grow-1">
-                <!-- Este espacio se usará para un diagrama futuro -->
-                Hola
+                <div id="chartContainer" class="card bg-gray-900 flex-grow-1">
+                    <h5 class="text-gray-500 text-center pt-3 pb-2">Evolución de Casos Confirmados</h5>
+                    <hr class="divider mx-4">
+                    <canvas id="myChart" class="m-5"></canvas>
+                </div>
             </div>
-        </div>
-        <!-- Cuadro de información del estado -->
         </div>
     </div>
 
+    <!-- Incluye la biblioteca de Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="app.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

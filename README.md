@@ -18,3 +18,5 @@ Si se llega a presentar algun error al intentar instalar Bootstrap se recomienda
     2.Ingresar "Set-ExecutionPolicy RemoteSigned" 
     3.Aceptar el cambio con una "S"
     4.Volver al entorno virtual (En mi caso Visual Studio Code) y volver a ingresar en la terminal "npm i bootstrap@5.3.3"
+
+Para el uso de la libreria Chart.js se utilizo el siguiente comando por terminal " npm install chart.js "
