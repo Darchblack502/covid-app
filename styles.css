@@ -1,44 +1,38 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #110101; /* Fondo con color de Bootstrap */
+    color: #ffffff; /* Texto blanco por defecto */
 }
 
 h1 {
-    color: #343a40;
+    color: #bb6262; /* Color púrpura claro para el título */
     font-weight: bold;
+    text-align: center; /* Centrar el título */
+    margin-bottom: 30px; /* Espacio debajo del título */
 }
 
-#stateData {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#stateData:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-p {
+#stateSelector {
     font-size: 18px;
-    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #bd6363; /* Fondo oscuro para el selector */
+    color: #ffffff; /* Texto blanco en el selector */
+    width: 100%; /* Ancho completo */
 }
 
 .card {
-    background-color: #ffffff;
-    border: 1px solid #dee2e6;
+    background-color: #a15050; /* Fondo oscuro para la tarjeta */
+    border: 1px solid #444444; /* Borde más oscuro */
     border-radius: 8px;
+    color: #ffffff; /* Texto blanco en la tarjeta */
 }
 
-.form-select {
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+#stateData p {
+    font-size: 18px;
+    text-align: left; /* Alinear texto a la izquierda para mayor legibilidad */
 }
 
-.form-select:focus {
-    border-color: #343a40;
-    box-shadow: 0 0 5px rgba(52, 58, 64, 0.5);
+#chartContainer {
+    min-height: 250px; /* Altura mínima para el cuadro del diagrama */
 }
