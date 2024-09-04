@@ -29,7 +29,14 @@ pruebas realizadas.
         npm i bootstrap@5.3.3
     ```
 
-3. Uso de la aplicación
+3. Ejecución de script
+
+    ```Properties
+        npm run build-css
+        npm start
+    ```
+
+4. Uso de la aplicación
 
     Abre el archivo **`index.html`** en tu navegador. Esto te permitirá interactuar con la interfaz y consultar los datos de la API sobre la situación de COVID-19 en diferentes estados de EE.UU.
 
